@@ -1,0 +1,272 @@
+body{
+	background: url(../img/bd-bg.png) repeat-x;
+	/*height: 3000px;*/
+}
+
+/*解决高度塌陷问题*/
+.clearfix:before,.clearfix:after{
+	display: table;
+	content: "";
+	clear: both;
+}
+/*兼容IE*/
+.clearfix{
+	zoom: 1;
+}
+
+/*为每个盒子定义宽度和居中*/
+.w{
+	width: 940px;
+	margin: 0px auto;
+}
+
+/*头部*/
+.header{
+	padding-top: 35px;
+	padding-bottom: 45px;
+	/*background: #bfa;*/
+}
+
+.logo{
+	margin-left: 20px;
+}
+
+.nav{
+	margin-right: 10px;
+	float: right;
+}
+
+.nav li{
+	float: left;
+	padding: 0px 7px 8px 7px;
+	margin-top: 15px;
+	border-left: 1px dashed silver;
+}
+
+.nav a{
+	font: bold 14px Georgia;
+	color: black;
+	text-decoration: none;
+}
+.nav a:hover{
+	color: #625f5f;
+}
+
+.nav p{
+	font: 11px Tahoma;
+}
+
+
+/*轮播图*/
+
+.banner {
+	/*设置阴影*/
+	height: 355px;
+	background: url(../img/banner-bg.png) no-repeat;
+	background-position: bottom center; 
+	position: relative;   /*开启相对定位*/
+}
+
+.pointerDiv{
+	position: absolute;  /*开启绝对定位*/
+	left: 20px;
+	bottom: 30px;
+}
+
+.pointerDiv a{
+	float: left;
+	width: 17px;
+	height: 17px;
+	margin-left: 10px;
+	background: url(../img/pointer.png);
+}
+
+.pointerDiv .active,.pointerDiv a:hover{
+	background: url(../img/pointer-active.png);
+}
+
+/*内容*/
+/*.content{
+	background: red;
+}*/
+
+.content h1{
+	font: bold 24px Georgia;
+	margin-top: 10px;
+	text-align: center;
+	background: url(../img/line.png) no-repeat;
+	background-position: bottom center; 
+	padding-bottom: 15px;
+	margin: 35px;
+}
+
+.content .pl,.content .cs,.content .uc,
+.contact .sc,.contact .co,.contact .nu{
+	width: 300px;
+	/*background: yellow;*/
+	float: left;
+}
+
+.content .cs{
+	margin: 0px 20px;
+}
+
+.content h2{
+	font: 21px Georgia;
+	color: #83b4cb;
+}
+
+.content .p1{
+	font: 12px Helvetica;
+	color: #8c8c8c;
+	margin-bottom: 16px;
+}
+
+.content .imgDiv{
+	background: url(../img/img-bg.png);
+	height: 190px;
+	text-align: center;
+	padding-top: 12px;
+}
+
+.content .p2{
+	height: 92px;
+	margin: 10px 5px 25px 5px;
+	color: #3e3e3e;
+}
+
+.content .lm{
+	width: 163px;
+	height: 40px;
+	display: block;
+	text-decoration: none;
+	color: #87aac1;
+	line-height: 40px;
+	text-indent: 1em;
+	margin-bottom:40px ;
+	background: url(../img/btn1.png) no-repeat;
+}
+
+/*contact联系栏*/
+.contact{
+	background: url(../img/line.png) no-repeat top center;
+	padding-top: 50px;
+
+}
+	
+.contact .co{
+	margin: 0px 20px;
+}
+	
+.contact h2{
+	font: 18px Georgia;
+	color: #444444;
+	border-bottom: dashed 1px silver;
+	padding-bottom:10px ;
+	margin-bottom: 10px;
+	
+}
+
+.contact .txt{
+	font: 10px Verdana;
+	width: 280px;
+	height: 33px;
+	background: url(../img/input.png) no-repeat;
+	border: none;
+	padding:0px 8px ;
+	margin: 0px 2px 20px;
+}
+.co .tarea{
+	margin: 0px;
+	font: 10px Verdana;
+	display: block;
+	width: 280px;
+	height: 134px;
+	background: url(../img/textarea.png) no-repeat;
+	border: none;
+	padding:0px 8px ;
+	margin: 0px 2px;
+	overflow: auto; /*自动添加滚动条*/
+	resize: none; /*去除拉伸*/
+}
+
+.contact .btn{
+	width: 163px;
+	height: 32px;
+	background: url(../img/btn2.png) no-repeat;
+	border: none;
+	margin: 0px;
+	margin: 0px 0px 25px 2px;
+	cursor: pointer;
+}
+
+
+.contact .p1{
+	font: 10px Helvetica;
+	color: #686868;
+}
+
+.sc .icon{
+	font-size: 0px;
+	margin-top: 6px;
+}
+
+.sc .nl{
+	font-weight: bold;
+	margin-top: 33px;
+	_margin-top: 43px;
+	
+}
+
+.sc .txt{
+	margin: 15px 2px 17px;
+}
+
+.nu img{
+	float: left;
+	margin-right: 4px;
+}
+
+.nu p{
+	height: 58px;
+	overflow: auto;
+	font: 12px Helvetica;
+	color: #686868;
+	border-bottom: dashed silver 1px;
+	padding-bottom: 17px;
+	margin-bottom: 5px;
+	
+}
+
+.nu .p1{
+	margin-bottom: 18px;
+}
+
+/*footer底部*/
+.footer{
+	height: 152px;
+	background-color: #333333;
+	border-top: solid #4c4c4c 12px;
+	padding-top: 20px;
+}
+
+.footer .copy{
+	margin-right: 20px;
+	float: right;
+	
+}
+
+.footer a{
+	color: #6A6A6A;
+	text-decoration: none;
+}
+
+.footer a:hover{
+	color: #a4a1a1;
+}
+
+.footer p{
+	font: 12px Helvetica;
+	color: #6a6a6a;
+	margin: 0px 0px 14px 12px;
+}
